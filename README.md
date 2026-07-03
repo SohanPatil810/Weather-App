@@ -1,24 +1,36 @@
-# 🌤️ Premium Weather App — Modern Weather Application
+# 🌤️ Premium Weather App
 
-A beautifully designed, feature-rich weather application built with **React**, **Vite**, and the **OpenWeatherMap API**. Weatherly delivers real-time weather updates, hourly and 5-day forecasts, dynamic backgrounds, and a premium glassmorphism-inspired user interface.
+A modern, premium weather application built with **React 19**, **Vite**, and the **OpenWeatherMap API**. Featuring a beautiful glassmorphism UI, dynamic weather backgrounds, smooth animations, dark/light mode, geolocation support, and responsive design, this application delivers a polished and intuitive weather experience across all devices.
+
+---
+
+## 🚀 Live Demo
+
+🌐 **Website:** https://weather-app-liart-omega-63.vercel.app/
+
+---
 
 ## ✨ Features
 
 * 🌍 Search weather for any city worldwide
-* 📍 Automatic weather detection using browser geolocation
+* 📍 Automatic weather detection using browser Geolocation API
 * 🌡️ Real-time weather information
 * 🌤️ Hourly weather forecast
 * 📅 5-Day weather forecast
-* 🌅 Sunrise and sunset timings
-* 💨 Wind speed and direction
-* 💧 Humidity, pressure, and visibility
-* 🌈 Dynamic backgrounds based on weather conditions
-* 🌙 Dark & Light mode with theme persistence
-* 🔍 Search history saved using Local Storage
-* ⚡ Smooth animations powered by Framer Motion
-* 📱 Fully responsive design for desktop, tablet, and mobile
-* 🚨 Graceful error handling for invalid cities, network failures, and API issues
-* 🦴 Loading skeletons for an improved user experience
+* 🌅 Sunrise & Sunset timings
+* 💨 Wind Speed
+* 💧 Humidity
+* 🌬️ Atmospheric Pressure
+* 👀 Visibility
+* 🌙 Dark & Light Mode
+* 💾 Theme persistence using Local Storage
+* 🔍 Search history
+* 🎨 Dynamic weather-based backgrounds
+* ✨ Glassmorphism user interface
+* ⚡ Smooth animations using Framer Motion
+* 📱 Fully responsive for Desktop, Tablet, and Mobile
+* 🚨 Beautiful error handling for invalid cities and network failures
+* ⌛ Loading skeletons for better user experience
 
 ---
 
@@ -30,7 +42,7 @@ A beautifully designed, feature-rich weather application built with **React**, *
 * Vite
 * JavaScript (ES6+)
 
-### UI & Styling
+### Styling
 
 * Tailwind CSS
 * Framer Motion
@@ -43,7 +55,8 @@ A beautifully designed, feature-rich weather application built with **React**, *
 
 ### Development Tools
 
-* Git & GitHub
+* Git
+* GitHub
 * npm
 
 ---
@@ -52,33 +65,35 @@ A beautifully designed, feature-rich weather application built with **React**, *
 
 ```text
 src/
-│── assets/
-│── components/
+│
+├── assets/
+├── components/
 │   ├── CurrentWeather.jsx
 │   ├── Forecast.jsx
 │   ├── HourlyForecast.jsx
-│   ├── Navbar.jsx
 │   ├── SearchBar.jsx
-│   ├── ThemeToggle.jsx
 │   ├── WeatherCard.jsx
 │   ├── WeatherDetails.jsx
+│   ├── ThemeToggle.jsx
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
 │   ├── Loader.jsx
-│   ├── ErrorCard.jsx
-│   └── Footer.jsx
+│   └── ErrorCard.jsx
 │
-│── hooks/
+├── hooks/
 │   └── useWeather.js
 │
-│── services/
+├── services/
 │   └── weatherApi.js
 │
-│── utils/
+├── utils/
 │   ├── formatDate.js
 │   ├── formatTime.js
 │   └── helpers.js
 │
-│── styles/
-│── App.jsx
+├── styles/
+│
+├── App.jsx
 └── main.jsx
 ```
 
@@ -86,20 +101,27 @@ src/
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
+git clone https://github.com/SohanPatil810/Premium-Weather-App.git
 ```
 
-### 2. Install dependencies
+### 2. Navigate to the Project
+
+```bash
+cd Premium-Weather-App
+```
+
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Create a `.env` file
+### 4. Create Environment Variables
+
+Create a `.env` file in the project root.
 
 ```env
 VITE_WEATHER_API_KEY=YOUR_API_KEY_HERE
@@ -107,15 +129,13 @@ VITE_WEATHER_API_KEY=YOUR_API_KEY_HERE
 
 > **Important:** Never commit your `.env` file to GitHub.
 
----
-
-### 4. Start the development server
+### 5. Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+The application will start at:
 
 ```text
 http://localhost:5173
@@ -123,7 +143,7 @@ http://localhost:5173
 
 ---
 
-## 📦 Production Build
+## 📦 Build for Production
 
 ```bash
 npm run build
@@ -139,7 +159,7 @@ npm run preview
 
 ## 🌐 API
 
-This project uses the **OpenWeatherMap API** to fetch real-time weather data.
+This project uses the **OpenWeatherMap API** to retrieve weather information.
 
 The API key is securely loaded using Vite environment variables.
 
@@ -149,18 +169,49 @@ const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 ---
 
-## 🌟 Future Improvements
+## 📸 Screenshots
 
-* 🌍 Air Quality Index (AQI)
+> Add screenshots after uploading them to your repository.
+
+### 🏠 Home Screen
+
+```
+screenshots/home.png
+```
+
+### 🔍 City Search
+
+```
+screenshots/search.png
+```
+
+### 🌙 Dark Mode
+
+```
+screenshots/dark-mode.png
+```
+
+### 📱 Mobile View
+
+```
+screenshots/mobile.png
+```
+
+---
+
+## 🌟 Future Enhancements
+
+* 🌎 Air Quality Index (AQI)
 * ☀️ UV Index
 * 🌧️ Weather Alerts
 * 🌙 Moon Phase
 * 📊 Interactive Weather Charts
 * ⭐ Favorite Cities
 * 🗺️ Interactive Weather Maps
-* 🌐 Multi-language Support
+* 🌍 Multi-language Support
 * 🔔 Push Notifications
-* 📡 Offline Support with Service Workers
+* 📡 Progressive Web App (PWA)
+* 🌐 Offline Support
 
 ---
 
@@ -168,17 +219,17 @@ const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 Contributions are welcome!
 
-1. Fork the repository.
+1. Fork this repository.
 2. Create a new feature branch.
 3. Commit your changes.
-4. Push to your branch.
+4. Push the branch.
 5. Open a Pull Request.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -192,4 +243,18 @@ This project is licensed under the MIT License.
 
 ## ⭐ Support
 
-If you found this project helpful, consider giving it a **⭐ Star** on GitHub. It helps others discover the project and motivates future improvements.
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
+
+Your support helps the project grow and motivates future improvements.
+
+---
+
+## 💙 Acknowledgements
+
+* React
+* Vite
+* Tailwind CSS
+* Framer Motion
+* Axios
+* OpenWeatherMap API
+* Vercel
