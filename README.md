@@ -169,36 +169,6 @@ const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots after uploading them to your repository.
-
-### 🏠 Home Screen
-
-```
-screenshots/home.png
-```
-
-### 🔍 City Search
-
-```
-screenshots/search.png
-```
-
-### 🌙 Dark Mode
-
-```
-screenshots/dark-mode.png
-```
-
-### 📱 Mobile View
-
-```
-screenshots/mobile.png
-```
-
----
-
 ## 🌟 Future Enhancements
 
 * 🌎 Air Quality Index (AQI)
