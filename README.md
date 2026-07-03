@@ -1,4 +1,4 @@
-# 🌦️ Weatherly — Modern Weather Application
+# 🌤️ Premium Weather App — Modern Weather Application
 
 A beautifully designed, feature-rich weather application built with **React**, **Vite**, and the **OpenWeatherMap API**. Weatherly delivers real-time weather updates, hourly and 5-day forecasts, dynamic backgrounds, and a premium glassmorphism-inspired user interface.
 
@@ -145,36 +145,6 @@ The API key is securely loaded using Vite environment variables.
 
 ```javascript
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-```
-
----
-
-## 📸 Screenshots
-
-Add screenshots of your application here.
-
-### Home Screen
-
-```
-/screenshots/home.png
-```
-
-### Search Results
-
-```
-/screenshots/search.png
-```
-
-### Dark Mode
-
-```
-/screenshots/dark-mode.png
-```
-
-### Mobile View
-
-```
-/screenshots/mobile.png
 ```
 
 ---
